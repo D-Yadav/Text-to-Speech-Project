@@ -9,16 +9,16 @@ on:
 
 jobs:
   integration:
-    name: continuous Integration
+    name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2  # Updated to v2
+        uses: actions/checkout@v2
 
       - name: Lint code
         run: echo "Linting Repository"
 
-      - name: run test
+      - name: Run test
         run: echo "Test complete"
 
   build-push-gcr:
@@ -47,7 +47,7 @@ jobs:
           username: _json_key
           password: ${{ secrets.GCP_CREDENTIALS }}
 
-      - name: Login to Artifact Registry with docker
+      - name: Login to Artifact Registry with Docker
         run: gcloud auth configure-docker "$GAR_LOCATION-docker.pkg.dev"
 
       - name: Docker build
@@ -80,7 +80,7 @@ jobs:
           username: _json_key
           password: ${{ secrets.GCP_CREDENTIALS }}
 
-      - name: Login to Artifact Registry with docker
+      - name: Login to Artifact Registry with Docker
         run: gcloud auth configure-docker "$GAR_LOCATION-docker.pkg.dev"
 
       - name: Authenticate to Artifact Registry
