@@ -8,6 +8,7 @@ on:
      - README.md
 
 jobs:
+#In a YAML workflow file for GitHub Actions, a "job" is a unit of work that you define to be executed in a workflow
   integration:
     name: Continuous Integration
     runs-on: ubuntu-latest
