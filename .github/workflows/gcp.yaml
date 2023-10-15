@@ -1,5 +1,5 @@
 name: workflow
-
+#In a YAML workflow file for GitHub Actions, the on key is used to specify the events or conditions that trigger the workflow. It defines when the workflow should be executed. The on field is typically placed at the top level of the workflow YAML file.
 on:
   push:
     branches:
