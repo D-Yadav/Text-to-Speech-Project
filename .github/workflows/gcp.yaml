@@ -22,7 +22,7 @@ jobs:
       - name: Run test
         run: echo "Test complete"
 
-  build-push-gcr:
+  build-push-gcr: # define a job named
     name: Build and Push to GCR
     needs: integration
     runs-on: ubuntu-latest
