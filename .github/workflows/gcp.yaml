@@ -66,7 +66,7 @@ jobs:
       REPOSITORY: "tts-project"
       IMAGE_NAME: "tts-project-image"
       IMAGE_TAG: "latest"
-      PROJECT_ID: useful-theory-400815
+      PROJECT_ID: unified-poet-400816
       GAR_LOCATION: asia-south1
     steps:
       - name: Authenticate with Google Cloud
